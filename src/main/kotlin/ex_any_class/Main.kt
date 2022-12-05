@@ -1,9 +1,10 @@
 package ex_any_class
 
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val building = Building("코틀린", area = 100)
+    printObject(building)
+}
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun printObject(any: Any) {
+    println(any.toString())
 }
